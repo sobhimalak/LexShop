@@ -5,17 +5,19 @@ using System.Web;
 using System.Web.Mvc;
 using LexShop.Core.Models;
 using LexShop.DataAccess.InMemory;
-
+using LexShop.Core.ViewModels;
+using LexShop.WebUi.Controllers;
 namespace LexShop.WebUi.Controllers
 {
     public class ProductManagerController : Controller
     {
 
-        ProductRepository context;
-
+        InMemoryRepository<Product> context;
+        InMemoryRepository<ProductCategory> productCategories;
         public ProductManagerController()
         {
-            context = new ProductRepository();
+            context = new InMemoryRepository<Product>();
+            productCategories = new InMemoryRepository<ProductCategory>();
         }
         // GET: ProductManager
         public ActionResult Index()
@@ -26,9 +28,11 @@ namespace LexShop.WebUi.Controllers
         }
         public ActionResult Create()
         {
-            Product product = new Product();
+            ProductManagerViewModel viewModel = new ProductManagerViewModel();
 
-            return View(product);
+            viewModel.Product = new Product();
+            viewModel.ProductCategories = productCategories.Collection();
+            return View(viewModel);
         }
         [HttpPost]
         public ActionResult Create(Product product)
@@ -40,8 +44,8 @@ namespace LexShop.WebUi.Controllers
             else
             {
                 context.insert(product);
-                context.Commit();
-                return RedirectToAction("index");
+                context.commit();
+                return RedirectToAction("Index");
             }
         }
         public ActionResult Edit(string Id)
@@ -53,7 +57,10 @@ namespace LexShop.WebUi.Controllers
             }
             else
             {
-                return View(product);
+                ProductManagerViewModel viewModel = new ProductManagerViewModel();
+                viewModel.Product = product;
+                viewModel.ProductCategories = productCategories.Collection();
+                return View(viewModel);
             }
         }
         [HttpPost]
@@ -74,9 +81,9 @@ namespace LexShop.WebUi.Controllers
                 productToEdit.Description = product.Description;
                 productToEdit.Image = product.Image;
                 productToEdit.Name = product.Name;
-                productToEdit.Prcie = product.Prcie;
+                productToEdit.Price = product.Price;
 
-                context.Commit();
+                context.commit();
 
                 return RedirectToAction("Index");
             }
@@ -106,7 +113,7 @@ namespace LexShop.WebUi.Controllers
             else
             {
                 context.Delete(Id);
-                context.Commit();
+                context.commit();
                 return RedirectToAction("Index");
             }
         }
