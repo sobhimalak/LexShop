@@ -35,7 +35,10 @@ namespace LexShop.WebUi.Controllers
                 products = context.Collection().Where( p => p.Category == Category).ToList();
             }
             ProductListViewModel model = new ProductListViewModel();
-            model.Products
+            model.Products = products;
+            model.ProductCategories = categories;
+
+            return View(model);
                           
         }
 
