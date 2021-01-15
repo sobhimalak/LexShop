@@ -32,7 +32,7 @@ namespace LexShop.DataAccess.SQL
         public void Delete(string Id)
         {
             var t = Find(Id);
-            if (context.Entry(t).State == System.Data.Entity.EntityState.Detached)
+            if (context.Entry(t).State == EntityState.Detached)
                 dbSet.Attach(t);
                 dbSet.Remove(t);
         }

@@ -39,7 +39,7 @@
                             <hr />
                         </div>
                         <div class="col-md-12">
-                            <strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong>
+                            <strong>@Html.ActionLink(item.Name, "Details", new { Id = item.Id })</strong>
                         </div>
 
                         <div class="col-md-12">
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="col-md-12">
-                            <a href="@Url.Action("AddToBasket", "Basket", new { id =item.Id} )" class="btn btn-danger"  style="border-radius:35px">Add To Basket</a>
+                            <a href="@Url.Action("AddToBasket", "Basket", new { Id =item.Id} )" class="btn btn-danger"  style="border-radius:35px">Add To Basket</a>
                         </div>
                     </div>
                 }

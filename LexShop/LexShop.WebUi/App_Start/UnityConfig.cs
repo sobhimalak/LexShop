@@ -2,6 +2,7 @@ using LexShop.Core.Contracts;
 using LexShop.Core.Models;
 using LexShop.DataAccess.InMemory;
 using LexShop.DataAccess.SQL;
+using LexShop.Services;
 using System;
 
 using Unity;
@@ -49,7 +50,8 @@ namespace LexShop.WebUi
             container.RegisterType<IRepository<Product>, SQLRepository<Product>>();
             container.RegisterType<IRepository<ProductCategory>, SQLRepository<ProductCategory>>();
             container.RegisterType<IRepository<BasketItem>, SQLRepository<BasketItem>>();
-            container.RegisterType<IBasketService, IBasketService>();
+            container.RegisterType<IRepository<Basket>, SQLRepository<Basket>>();
+            container.RegisterType<IBasketService, BasketService>();
 
         }
     }
