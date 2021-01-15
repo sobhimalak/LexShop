@@ -28,9 +28,9 @@
             </dd>
 
             <dt></dt>
-            <dd> <a href="#" class="btn btn-danger">Add To Basket</a>  </dd>
+            <dd> <a href="@Url.Action("AddToBasket", "Basket", new { id =Model.Id} )" class="btn btn-danger">Add To Basket</a>  </dd>
             @Html.ActionLink("Back to List", "Index")
         </dl>
     </div>
 </div>
-
+<div class="col-md-12" clearfix></div>
