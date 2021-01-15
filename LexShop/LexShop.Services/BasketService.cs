@@ -17,8 +17,8 @@ namespace LexShop.Services
 
         public BasketService (IRepository<Product> ProductContext, IRepository<Basket> BasketContext)
         {
-            this.basketContext = basketContext;
-            this.productContext = productContext;
+            this.basketContext = BasketContext;
+            this.productContext = ProductContext;
         }
         private Basket GetBasket(HttpContextBase httpContext, bool createIfnull)
         {
