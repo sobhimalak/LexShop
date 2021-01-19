@@ -1,5 +1,5 @@
-﻿using LexShop.Core.Models;
-using LexShop.Core.ViewModels;
+﻿using Photogenix.Core.Models;
+using Photogenix.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace LexShop.Core.Contracts
+namespace Photogenix.Core.Contracts
 {
   public  interface IBasketService
     {

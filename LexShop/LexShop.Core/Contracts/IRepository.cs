@@ -1,7 +1,7 @@
-﻿using LexShop.Core.Models;
+﻿using Photogenix.Core.Models;
 using System.Linq;
 
-namespace LexShop.Core.Contracts
+namespace Photogenix.Core.Contracts
 {
     public interface IRepository<T> where T : BaseEntity
     {

@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using LexShop.WebUi.Models;
+using Photogenix.WebUi.Models;
 
-namespace LexShop.WebUi.Controllers
+namespace Photogenix.WebUi.Controllers
 {
     [Authorize]
     public class ManageController : Controller

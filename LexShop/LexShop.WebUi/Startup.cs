@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(LexShop.WebUi.Startup))]
-namespace LexShop.WebUi
+[assembly: OwinStartupAttribute(typeof(Photogenix.WebUi.Startup))]
+namespace Photogenix.WebUi
 {
     public partial class Startup
     {

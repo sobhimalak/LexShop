@@ -1,5 +1,5 @@
-﻿using LexShop.Core.Contracts;
-using LexShop.Core.Models;
+﻿using Photogenix.Core.Contracts;
+using Photogenix.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LexShop.DataAccess.SQL
+namespace Photogenix.DataAccess.SQL
 {
     public class SQLRepository<T> : IRepository<T> where T : BaseEntity
     {

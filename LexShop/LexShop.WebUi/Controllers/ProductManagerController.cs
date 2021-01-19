@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using LexShop.Core.Models;
-using LexShop.DataAccess.InMemory;
-using LexShop.Core.ViewModels;
-using LexShop.WebUi.Controllers;
-using LexShop.Core.Contracts;
+using Photogenix.Core.Models;
+using Photogenix.DataAccess.InMemory;
+using Photogenix.Core.ViewModels;
+using Photogenix.WebUi.Controllers;
+using Photogenix.Core.Contracts;
 using System.IO;
 
-namespace LexShop.WebUi.Controllers
+namespace Photogenix.WebUi.Controllers
 {
     public class ProductManagerController : Controller
     {

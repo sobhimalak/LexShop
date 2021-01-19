@@ -1,4 +1,4 @@
-﻿using LexShop.Core.Models;
+﻿using Photogenix.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace LexShop.DataAccess.SQL
+namespace Photogenix.DataAccess.SQL
 {
     public class DataContext : DbContext
     {

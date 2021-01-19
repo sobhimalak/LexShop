@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     public class BundleConfig
     {

@@ -1,11 +1,11 @@
-﻿using LexShop.Core.Contracts;
+﻿using Photogenix.Core.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace LexShop.WebUi.Controllers
+namespace Photogenix.WebUi.Controllers
 {
     public class BasketController : Controller
     {

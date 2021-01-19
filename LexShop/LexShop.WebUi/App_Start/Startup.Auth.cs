@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using LexShop.WebUi.Models;
+using Photogenix.WebUi.Models;
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     public partial class Startup
     {

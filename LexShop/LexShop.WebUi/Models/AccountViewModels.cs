@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace LexShop.WebUi.Models
+namespace Photogenix.WebUi.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

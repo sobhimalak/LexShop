@@ -3,10 +3,10 @@ using System.Web.Mvc;
 
 using Unity.AspNet.Mvc;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(LexShop.WebUi.UnityMvcActivator), nameof(LexShop.WebUi.UnityMvcActivator.Start))]
-[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(LexShop.WebUi.UnityMvcActivator), nameof(LexShop.WebUi.UnityMvcActivator.Shutdown))]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(Photogenix.WebUi.UnityMvcActivator), nameof(Photogenix.WebUi.UnityMvcActivator.Start))]
+[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(Photogenix.WebUi.UnityMvcActivator), nameof(Photogenix.WebUi.UnityMvcActivator.Shutdown))]
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     /// <summary>
     /// Provides the bootstrapping for integrating Unity with ASP.NET MVC.

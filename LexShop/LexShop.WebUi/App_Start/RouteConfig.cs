@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     public class RouteConfig
     {

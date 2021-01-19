@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using LexShop.WebUi.Models;
+using Photogenix.WebUi.Models;
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     public class EmailService : IIdentityMessageService
     {

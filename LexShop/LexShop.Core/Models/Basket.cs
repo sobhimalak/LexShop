@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LexShop.Core.Models
+namespace Photogenix.Core.Models
 {
    public class Basket : BaseEntity
     {

@@ -1,4 +1,4 @@
-namespace LexShop.DataAccess.SQL.Migrations
+namespace Photogenix.DataAccess.SQL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

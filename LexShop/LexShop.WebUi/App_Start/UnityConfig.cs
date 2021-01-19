@@ -1,13 +1,13 @@
-using LexShop.Core.Contracts;
-using LexShop.Core.Models;
-using LexShop.DataAccess.InMemory;
-using LexShop.DataAccess.SQL;
-using LexShop.Services;
+using Photogenix.Core.Contracts;
+using Photogenix.Core.Models;
+using Photogenix.DataAccess.InMemory;
+using Photogenix.DataAccess.SQL;
+using Photogenix.Services;
 using System;
 
 using Unity;
 
-namespace LexShop.WebUi
+namespace Photogenix.WebUi
 {
     /// <summary>
     /// Specifies the Unity configuration for the main container.

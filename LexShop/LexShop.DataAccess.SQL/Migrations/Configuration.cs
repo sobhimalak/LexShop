@@ -1,18 +1,18 @@
-namespace LexShop.DataAccess.SQL.Migrations
+namespace Photogenix.DataAccess.SQL.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<LexShop.DataAccess.SQL.DataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Photogenix.DataAccess.SQL.DataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(LexShop.DataAccess.SQL.DataContext context)
+        protected override void Seed(Photogenix.DataAccess.SQL.DataContext context)
         {
             //  This method will be called after migrating to the latest version.
 

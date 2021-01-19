@@ -1,13 +1,13 @@
-﻿using LexShop.Core.Contracts;
-using LexShop.Core.Models;
-using LexShop.Core.ViewModels;
+﻿using Photogenix.Core.Contracts;
+using Photogenix.Core.Models;
+using Photogenix.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace LexShop.WebUi.Controllers
+namespace Photogenix.WebUi.Controllers
 {
     public class HomeController : Controller
     {
